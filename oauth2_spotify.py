@@ -13,7 +13,7 @@ def load_credentials():
             data = json.load(f)
             return data
     except Exception as e:
-        print("There was an error loading the credentials. Contact MBD Team D Section 2 for support.")
+        print("There was an error loading the credentials.")
 
 def update_credentials(field, client_id, client_secret):
     try:
@@ -25,7 +25,7 @@ def update_credentials(field, client_id, client_secret):
             f.write(json.dumps(data))
             return 1
     except e as Exception:
-        print("There was an error loading the credentials. Contact MBD Team D Section 2 for support.")
+        print("There was an error loading the credentials.")
 
 
 host = '0.0.0.0'
